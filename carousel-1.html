@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Carosuel</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    body{
+        margin: 0px;
+    }
+    .carousel{
+        width: 100%;
+        overflow: scroll;
+        padding: 30px;
+        position: relative;
+    }
+    .carousel__container{
+        white-space: nowrap;
+        margin: 70px 0px;
+        padding-bottom: 10px;
+    }
+    .carosuel-item{
+        background-color: violet;
+        width: 200px;
+        height: 250px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin-right: 10px;
+        display: inline-block;
+        cursor: pointer;
+        transition: 450ms all;
+        transform-origin: center left;
+        position: relative;
+    }
+    .carosuel-item:hover ~ .carosuel-item{
+       transform: translate3d(100px, 0, 0);
+    }
+    .carousel__container:hover .carosuel-item{
+        opacity: 0.3;
+    }
+    .carousel__container:hover .carosuel-item:hover{
+        transform: scale(1.5);
+        opacity: 1;
+    }
+    .carousel-item__img{
+        width: 200px;
+        height: 250px;
+        object-fit: cover;
+    }
+    .carosuel-item__details{
+        background: linear-gradient(to top, rgba(0,0,0, 0.9) 0%, rgba(0,0,0, 0.0) 100%);
+        font-size: 10px;
+        opacity: 1;
+        transition: 450ms opacity;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+</style>
+<body>
+    <section class="carousel">
+        <div class="carousel__container">
+            <div class="carosuel-item">
+              <img class="carousel-item__img" src="./oceano.jpg" alt="img1">
+              <div class="carousel-item__details">
+                <img src="https://img.icons8.com/flat-round/50/000000/play--v1.png"/>
+                <img src="https://img.icons8.com/color/48/000000/plus--v1.png"/>
+              </div>
+              <p class="carousel-item___details--title">titulo descriptivo</p>
+              <p class="carousel-item___details--subtitle">2019 16+ 144 mn</p>
+            </div>
+            <div class="carosuel-item">
+              
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Login</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #8F57FD;
+        font-family: 'Mulish', sans-serif;
+    }
+
+    .header {
+        width: 100%;
+        height: 80px;
+        background-color: #8F57FD;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__img {
+        width: 200px;
+        margin: 20px;
+        height: 60px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <img class='header__img' src="logo-platzi.png" alt="logo">
+    </header>
+    <section class="login">
+        <div class="login__container">
+            <h2>Inicia sesión</h2>
+            <form class="login__container--form">
+                <input type="text" class="input" placeholder="correo">
+                <input type="password" class="input" placeholder="contraseña">
+                <button class="button">Iniciar sesión</button>
+                <div class="login__container--remenber">
+                    <label><input type="checkbox" id="caja1" value="checkbox">Recuérdame</label>
+                    <a href="/">Olvide mi contraseña</a>
+                </div>
+            </form>
+            <section class="login__container--social-media">
+                <div>
+                    <img src="./google-icon.png" alt="google">Inica sesión con Google
+                    <img src="./twitter-icon.png" alt="twitter">Inicia sesión con Twitter
+                </div>
+            </section>
+            <p class="login__container--register">
+                No tienes ninguna cuenta <a href="/">Registrate</a>
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+      <a href="/">Terminos de uso</a>
+      <a href="/">Declaración de privacidad</a>
+      <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+
+</html>
